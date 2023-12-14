@@ -9,6 +9,11 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
+            },
+            "options": {
+                "statusbar": {
+                    "label": "$(package) build"
+                }
             }
         },
         {
@@ -21,10 +26,15 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
+            },
+            "options": {
+                "statusbar": {
+                    "label": "$(run) run"
+                }
             }
         },
         {
-            "label": "cargo",
+            "label": "cargo check",
             "type": "shell",
             "command": "cargo",
             "args": [
@@ -33,7 +43,12 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
-        }        
+            },
+            "options": {
+                "statusbar": {
+                    "label": "$(check) check"
+                }
+            }            
+        }
     ]
 }
